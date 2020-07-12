@@ -1,0 +1,105 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: #333;
+    line-height: 1.6;
+
+    .logo {
+        font-size: 2.2rem;
+
+        span {
+            letter-spacing: -3.5px;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 30%; //Change this and add margin-left on the a links instead
+
+        a {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+
+        .line-1,
+        .line-2,
+        .line-3 {
+        width: 25px;
+        height: 2.3px;
+        margin: 0.3rem;
+        border-radius: 8px;
+        background-color: $white-dark;
+        transition: all 0.3s ease;
+        }
+
+        .line-2 {
+            width: 20px;
+        }
+    }   
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        .nav-links {
+            position: absolute;
+            right: 0;
+            height: 92vh;
+            top: 8vh;
+            background: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+
+            li {
+                opacity: 0;
+            }
+        }
+
+        .burger {
+            display: block;
+        }
+
+        .nav-active {
+            transform: translateX(0%);
+        }
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line-1 {
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+
+.toggle .line-2 {
+    opacity: 0;
+}
+
+.toggle .line-3 {
+    transform: rotate(45deg) translate(-5px,-5px);
+}

@@ -2,11 +2,11 @@ body {
     font-family: $poppins;
     line-height: 1.6;
     background: $purple-bg;
-    color: #fff;
+    color: $white-dark;
 }
 
 a {
-    color: #fff;
+    color: $white-dark;
     transition: $trans-1;
 
     &:hover {

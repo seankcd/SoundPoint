@@ -5,8 +5,9 @@ $blue-dark: #1362AB;
 $blue-light: #41A2FC;
 
 //-Mono Colours
-$light-gray: #e9e9e9;
-$dark-gray: #333333;
+$white-dark: #f5f5f5;
+$gray-light: #e9e9e9;
+$gray-dark: #333333;
 
 //-Background Colours
 $purple-bg: #4A3F4B;
@@ -25,4 +26,4 @@ $shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
 $shadow-inset:         
 inset 0 3px 20px -10px rgba(0, 0, 0, 0.4),
 inset 0 -3px 20px -10px rgba(0, 0, 0, 0.4);
-$shadow-filter: drop-shadow(2.5px 2.5px 8px $dark-gray);
+$shadow-filter: drop-shadow(2.5px 2.5px 8px $gray-dark);
