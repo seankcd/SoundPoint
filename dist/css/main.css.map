@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "AAGA,OAAO,CAAC,oHAAI;AGHZ,AAAA,CAAC;AACD,CAAC,AAAA,QAAQ;AACT,CAAC,AAAA,OAAO,CAAC;EACL,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;AAED,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;CACxB;;AAED,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;CACnB;;ACdD,AAAA,IAAI,CAAC;EACD,WAAW,EHgBL,SAAS,EAAE,UAAU;EGf3B,WAAW,EAAE,GAAG;EAChB,UAAU,EHQF,OAAO;EGPf,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,CAAC,CAAC;EACE,KAAK,EAAE,IAAI;EACX,UAAU,EHaJ,GAAG,CAAC,KAAK,CAAC,OAAO;CGR1B;;AAPD,AAII,CAJH,AAII,MAAM,CAAC;EACJ,KAAK,EHRA,OAAO;CGSf",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/1-utilities/_variables.scss",
+        "../../scss/1-utilities/_mixins.scss",
+        "../../scss/2-general/_resets.scss",
+        "../../scss/2-general/_global.scss",
+        "../../scss/2-general/_buttons.scss",
+        "../../scss/3-layout/_header.scss",
+        "../../scss/3-layout/_mainContent.scss",
+        "../../scss/3-layout/_footer.scss",
+        "../../scss/4-pages/_home.scss",
+        "../../scss/4-pages/_discover.scss",
+        "../../scss/4-pages/_signup.scss",
+        "../../scss/4-pages/_support.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

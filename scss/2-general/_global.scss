@@ -1,0 +1,15 @@
+body {
+    font-family: $poppins;
+    line-height: 1.6;
+    background: $purple-bg;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    transition: $trans-1;
+
+    &:hover {
+        color: $blue-light;
+    }
+}

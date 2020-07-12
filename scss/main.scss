@@ -1,3 +1,24 @@
-body {
-    background: red;
-}
+//Only imports in this SCSS file
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+//1 - UTILITIES
+@import '1-utilities/variables';
+@import '1-utilities/mixins';
+
+//2 - GENERAL
+@import '2-general/resets';
+@import '2-general/global';
+@import '2-general/buttons';
+
+//3 - LAYOUT
+@import '3-layout/header';
+@import '3-layout/mainContent';
+@import '3-layout/footer';
+
+//4 - PAGES
+@import '4-pages/home';
+@import '4-pages/discover';
+@import '4-pages/signup';
+@import '4-pages/support';
