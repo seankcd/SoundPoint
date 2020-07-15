@@ -14,3 +14,14 @@ a {
         color: $blue-light;
     }
 }
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    overflow: hidden; /* Visible makes the butons work. Used to be/is supposed to be hidden */
+}

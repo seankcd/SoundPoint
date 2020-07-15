@@ -3,19 +3,38 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 100vh;
+    padding: 0 2rem;
+    height: 90vh;
     max-width: $max-width;
 
     img {
-        height: 80%;
-        position: relative;
-        margin: 0 2rem 0;
+        height: 95%;
+        padding-right: 2rem;
     }
 
     .hero-text {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin: 0 2rem 0;
+
+        h1 {
+            line-height: 1;
+        }
+
+        p {
+            margin: 2rem 0;
+        }
+
+        .blue {
+            color: $blue-dark;
+        }
+
+        .pink {
+            color: $pink-dark;
+        }
+
+        .btn {
+            margin-right: 1rem;
+        }
     }
 }

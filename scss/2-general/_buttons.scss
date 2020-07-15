@@ -7,13 +7,31 @@
     padding: 0.5rem 1.3rem;
     border: none;
     cursor: pointer;
-    margin: 0.5rem;
     outline: none;
     border-radius: 8px;
+    transition: $trans-1;
 
     &:hover {
         background: darken($blue-light, 10%);
         color: darken($white-dark, 10%);
-        box-shadow: $shadow;
+        box-shadow: $shadow-blue-light;
+        transition: $trans-1;
+    }
+
+    &-outline {
+        border: 3px solid $white-dark;
+        background: none;
+
+        &:hover {
+            background: none;
+        }
+
+        &-pink {
+            border: 3px solid $pink-light;
+
+            &:hover {
+                box-shadow: $shadow-pink-light;
+            }
+        }
     }
 }

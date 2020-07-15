@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    justify-content: center;
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        max-width: $max-width;
+
+        p {
+            font-size: 0.7rem;
+            opacity: 0.4;
+        }
+
+        .social-footer a {
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            &:first-child {
+                padding-right: 2rem;
+            }
+        }
+    }
+}

@@ -1,9 +1,12 @@
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; //Was space-around but it messed with the spacing
     align-items: center;
     min-height: 12vh;
     line-height: 1.6;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 2rem;
 
     .logo {
         font-size: 2.2rem;
