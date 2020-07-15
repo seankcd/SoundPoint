@@ -12,6 +12,7 @@ nav {
         font-size: 2.2rem;
         display: flex;
         justify-content: center;
+        z-index: 2;
 
         img {
             margin-right: 0.7rem;
@@ -62,7 +63,7 @@ nav {
     }   
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: $resp-phone) {
     body {
         overflow-x: hidden;
     }
@@ -72,15 +73,16 @@ nav {
 
         .nav-links {
             position: absolute;
+            z-index: 1;
             right: 0;
-            height: 90vh;
-            top: 10vh;
-            background: rgba(51, 51, 51, 0.5);
+            height: 100vh;
+            top: 0;
+            background: rgba(51, 51, 51, 0.95);
             border-radius: 8px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 50%;
+            width: 100%;
             transform: translateX(100%);
             transition: transform 0.5s ease-in;
 
@@ -101,6 +103,7 @@ nav {
 
         .burger {
             display: block;
+            z-index: 1;
         }
 
         .nav-active {
@@ -113,11 +116,13 @@ nav {
     from {
         opacity: 0;
         transform: translateX(50px);
+        transition: $trans-1;
     }
 
     to {
         opacity: 1;
         transform: translateX(0px);
+        transition: $trans-1;
     }
 }
 

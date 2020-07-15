@@ -88,7 +88,7 @@ nav {
   align-items: center;
   min-height: 12vh;
   line-height: 1.6;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -97,6 +97,7 @@ nav .logo {
   font-size: 2.2rem;
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
 nav .logo img {
@@ -155,15 +156,16 @@ nav .burger .line-2 {
   }
   nav .nav-links {
     position: absolute;
+    z-index: 1;
     right: 0;
-    height: 90vh;
-    top: 10vh;
-    background: rgba(51, 51, 51, 0.5);
+    height: 100vh;
+    top: 0;
+    background: rgba(51, 51, 51, 0.95);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
@@ -180,6 +182,7 @@ nav .burger .line-2 {
   }
   nav .burger {
     display: block;
+    z-index: 1;
   }
   nav .nav-active {
     transform: translateX(0%);
@@ -190,10 +193,12 @@ nav .burger .line-2 {
   from {
     opacity: 0;
     transform: translateX(50px);
+    transition: all 150ms ease-in;
   }
   to {
     opacity: 1;
     transform: translateX(0px);
+    transition: all 150ms ease-in;
   }
 }
 
@@ -223,7 +228,7 @@ footer .container {
   bottom: 20px;
   margin: 0 auto;
   padding: 0 2rem;
-  max-width: 1100px;
+  max-width: 1300px;
 }
 
 footer .container p {
@@ -232,12 +237,22 @@ footer .container p {
 }
 
 footer .container .social-footer a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 footer .container .social-footer a:first-child {
   padding-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column-reverse;
+  }
+  footer .container .copyright {
+    margin-top: 1rem;
+  }
 }
 
 main {
@@ -247,7 +262,7 @@ main {
   margin: 0 auto;
   padding: 0 2rem;
   height: 90vh;
-  max-width: 1100px;
+  max-width: 1300px;
 }
 
 main img {
@@ -279,5 +294,24 @@ main .hero-text .pink {
 
 main .hero-text .btn {
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: rgba(74, 63, 75, 0.9) url("../img/girl.png") no-repeat fixed center bottom/auto;
+    background-blend-mode: overlay;
+  }
+  main {
+    height: 70vh;
+  }
+  main img {
+    display: none;
+  }
+  main .hero-text h1 {
+    font-size: 2.3rem;
+  }
+  main .hero-text p {
+    font-size: 0.9rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
