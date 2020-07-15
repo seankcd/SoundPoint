@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    max-width: $max-width;
+
+    img {
+        height: 80%;
+        position: relative;
+        margin: 0 2rem 0;
+    }
+
+    .hero-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 2rem 0;
+    }
+}

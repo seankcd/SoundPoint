@@ -1,0 +1,19 @@
+.btn {
+    display: inline-block;
+    background: $blue-light;
+    color: $white-dark;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1.3rem;
+    border: none;
+    cursor: pointer;
+    margin: 0.5rem;
+    outline: none;
+    border-radius: 8px;
+
+    &:hover {
+        background: darken($blue-light, 10%);
+        color: darken($white-dark, 10%);
+        box-shadow: $shadow;
+    }
+}
