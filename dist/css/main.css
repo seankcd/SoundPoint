@@ -298,8 +298,7 @@ main .hero-text .btn {
 
 @media screen and (max-width: 768px) {
   body {
-    background: rgba(74, 63, 75, 0.9) url("../img/girl.png") no-repeat fixed center bottom/auto;
-    background-blend-mode: overlay;
+    background: linear-gradient(rgba(74, 63, 75, 0.8), rgba(74, 63, 75, 0.8)), url("../img/girl.png") no-repeat fixed center bottom/650px, #4a3f4b;
   }
   main {
     height: 70vh;
