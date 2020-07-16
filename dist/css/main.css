@@ -310,6 +310,10 @@ main .hero-text .btn {
   main img {
     display: none;
   }
+  main .hero-text {
+    display: flex;
+    align-items: center;
+  }
   main .hero-text h1 {
     font-size: 2.3rem;
   }
