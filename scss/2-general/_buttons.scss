@@ -38,7 +38,7 @@
             // border: 3px solid;
             position: relative;
             border: 3px solid transparent;
-            background: $purple-bg;
+            background: $purple-bg; //Has to be a background. Might make it into a transparent img later. Looks weird on mobile
             background-clip: padding-box;
             padding: 0.4rem 1.2rem;
             // border-image: linear-gradient(45deg, $pink-light, $blue-light) 1;
@@ -55,6 +55,7 @@
 
             &:hover {
                 box-shadow: $shadow-pink-light;
+                color: $white-dark;
             }
         }
     }
