@@ -82,6 +82,30 @@ h1 {
   box-shadow: 0 3px 20px rgba(252, 129, 255, 0.4);
 }
 
+.btn-outline-pink-blue {
+  position: relative;
+  border: 3px solid transparent;
+  background: #4A3F4B;
+  background-clip: padding-box;
+  padding: 0.4rem 1.2rem;
+}
+
+.btn-outline-pink-blue::after {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  background: linear-gradient(45deg, #FC81FF, #41A2FC);
+  content: '';
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.btn-outline-pink-blue:hover {
+  box-shadow: 0 3px 20px rgba(252, 129, 255, 0.4);
+}
+
 nav {
   display: flex;
   justify-content: space-between;

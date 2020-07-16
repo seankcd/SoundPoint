@@ -33,5 +33,29 @@
                 box-shadow: $shadow-pink-light;
             }
         }
+
+        &-pink-blue {
+            // border: 3px solid;
+            position: relative;
+            border: 3px solid transparent;
+            background: $purple-bg;
+            background-clip: padding-box;
+            padding: 0.4rem 1.2rem;
+            // border-image: linear-gradient(45deg, $pink-light, $blue-light) 1;
+
+            &::after {
+                position: absolute;
+                top: -3px; bottom: -3px;
+                left: -3px; right: -3px;
+                background: linear-gradient(45deg, $pink-light, $blue-light);
+                content: '';
+                z-index: -1;
+                border-radius: 8px;
+            }
+
+            &:hover {
+                box-shadow: $shadow-pink-light;
+            }
+        }
     }
 }
