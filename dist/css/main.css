@@ -95,9 +95,12 @@ nav {
 
 nav .logo {
   font-size: 2.2rem;
+  z-index: 2;
+}
+
+nav .logo a {
   display: flex;
   justify-content: center;
-  z-index: 2;
 }
 
 nav .logo img {
@@ -106,6 +109,7 @@ nav .logo img {
 
 nav .logo span {
   letter-spacing: -3.5px;
+  color: #AA5AAC;
 }
 
 nav .nav-links {
