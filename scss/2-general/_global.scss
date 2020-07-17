@@ -21,6 +21,12 @@ h1 {
     line-height: 1;
 }
 
+h2 { font-size: 1.2rem; }
+
+p {
+    font-family: $montserrat;
+}
+
 .blue-dark { color: $blue-dark; }
 
 .blue-light { color: $blue-light; }

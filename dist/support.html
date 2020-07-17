@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
     <script src="https://kit.fontawesome.com/e303507efc.js" crossorigin="anonymous"></script>
     <title>SoundPoint - Get help, fast.</title>
 </head>
-<body>
+<body id="page-support">
     <!-- Header/Nav -->
     <nav>
         <div class="logo">
@@ -32,15 +33,47 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="home">
-        <img src="img/girl.png" alt="">
-        <div class="hero-text">
-            <h1><span class="blue">Your</span> Life.</h1>
-            <h1><span class="pink">Your</span> Music.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illo autem cum aliquam molestiae maiores similique blanditiis voluptates enim nostrum!</p>
-            <div class="hero-btns">
-                <a href="signup.html" class="btn">Signup</a>
-                <a href="discover.html" class="btn btn-outline btn-outline-pink">Discover</a>
+    <main class="support container">
+        <div class="support-search">
+            <h1>Need some <span class="pink-dark">help?</span></h1>
+            <form class="support-search-bar">
+                <input type="text" placeholder="&#xF002; Search.." name="search" style="font-family: 'FontAwesome', 'Poppins'"> 
+                <button type="submit" class="btn-search">GO</button>
+            </form>
+        </div>
+
+        <div class="problems">
+            <h1>Common <span class="blue-dark">Problems</span></h1>
+            <div class="problems-links">
+                <div class="account problems-links-list">
+                    <ul>
+                        <li><h2>Account</h2></li>
+                        <li><a href="#">Signing in</a></li>
+                        <li><a href="#">Forgotten Password</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Delete Account</a></li>
+                    </ul>
+                </div>
+
+                <div class="billing problems-links-list">
+                    <ul>
+                        <li><h2>Billing & Payments</h2></li>
+                        <li><a href="#">Signing in</a></li>
+                        <li><a href="#">Forgotten Password</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Delete Account</a></li>
+                    </ul>
+                </div>
+
+                <div class="using problems-links-list">
+                    <ul>
+                        <li><h2>Using <span>SoundPoint</span></h2></li>
+                        <li><a href="#">Signing in</a></li>
+                        <li><a href="#">Forgotten Password</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Delete Account</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>

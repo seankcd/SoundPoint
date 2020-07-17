@@ -70,4 +70,15 @@
             }
         }
     }
+
+    &-search {
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-top-right-radius: 8px;
+        background: $blue-light;
+        font-weight: 600;
+        color: $white-dark;
+        cursor: pointer;
+    }
 }

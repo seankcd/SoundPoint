@@ -1,0 +1,49 @@
+.support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+
+    &-search {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &-bar {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type=text] {
+            height: 50px;
+            border: none;
+            width: 30rem;
+            padding-left: 2rem;
+            border-bottom-left-radius: 8px;
+            font-size: 1.2em;
+            color: $gray-light;
+        }
+    }
+
+    .problems {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &-links {
+            display: flex;
+            margin-top: 1.5rem;
+
+            &-list {
+                margin: 0 2rem;
+            }
+
+            a {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
