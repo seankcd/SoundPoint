@@ -340,22 +340,22 @@ footer .container .social-footer a:first-child {
   #page-home {
     background: linear-gradient(rgba(74, 63, 75, 0.8), rgba(74, 63, 75, 0.8)), url("../img/girl.png") no-repeat fixed left bottom/650px, #4a3f4b;
   }
-  .home {
+  #page-home .home {
     height: 70vh;
   }
-  .home img {
+  #page-home .home img {
     display: none;
   }
-  .home .hero-text {
+  #page-home .home .hero-text {
     display: flex;
     align-items: center;
     text-align: center;
     width: 100%;
   }
-  .home .hero-text h1 {
+  #page-home .home .hero-text h1 {
     font-size: 2.6rem;
   }
-  .home .hero-text p {
+  #page-home .home .hero-text p {
     font-size: 0.95rem;
   }
 }
@@ -367,7 +367,7 @@ footer .container .social-footer a:first-child {
   .home img {
     display: none;
   }
-  .hero-text {
+  .home .hero-text {
     display: flex;
     align-items: center;
     text-align: center;
@@ -395,5 +395,11 @@ footer .container .social-footer a:first-child {
 
 .discover .btn {
   margin: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .discover {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

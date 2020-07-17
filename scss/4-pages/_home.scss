@@ -32,27 +32,27 @@
             rgba(74, 63, 75, 0.8)),
         url('../img/girl.png') no-repeat fixed left bottom/650px,
         rgb(74, 63, 75);
-    }
 
-    .home {
-        height: 70vh;
-
-        img {
-        display: none;
-        }
-
-        .hero-text {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-
-            h1 {
-                font-size: 2.6rem;
+        .home {
+            height: 70vh;
+    
+            img {
+            display: none;
             }
-
-            p {
-                font-size: 0.95rem;
+    
+            .hero-text {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+    
+                h1 {
+                    font-size: 2.6rem;
+                }
+    
+                p {
+                    font-size: 0.95rem;
+                }
             }
         }
     }
@@ -68,17 +68,20 @@
         rgb(74, 63, 75);
     }
 
-    .home img {
-        // position: relative; Keeps the girl in the foreground
-        // bottom: -3rem;
-        // height: 85%;
-        display: none;
-    }
+    .home {
+        img {
+            // Keeps the girl in the foreground
+            // position: relative;
+            // bottom: -3rem;
+            // height: 85%;
+            display: none;
+        }
 
-    .hero-text {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        width: 50%;
+        .hero-text {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 50%;
+        }
     }
 }
