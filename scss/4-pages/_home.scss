@@ -1,14 +1,11 @@
-main {
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 2rem;
     height: 90vh;
-    max-width: $max-width;
 
     img {
-        height: 95%;
+        height: 96%;
         padding-right: 2rem;
     }
 
@@ -17,20 +14,8 @@ main {
         justify-content: center;
         flex-direction: column;
 
-        h1 {
-            line-height: 1;
-        }
-
         p {
             margin: 2rem 0;
-        }
-
-        .blue {
-            color: $blue-dark;
-        }
-
-        .pink {
-            color: $pink-dark;
         }
 
         .btn {
@@ -48,7 +33,7 @@ main {
         url('../img/girl.png') no-repeat fixed left bottom/650px,
         rgb(74, 63, 75);
     }
-    main {
+    .home {
         height: 70vh;
 
         img {

@@ -1,0 +1,26 @@
+#page-discover {
+    background:
+    linear-gradient(
+        rgba(74, 63, 75, 0.7), 
+        rgba(74, 63, 75, 0.7)),
+        url('../img/album-bg.png') no-repeat center center/cover,
+    rgb(74, 63, 75);
+    height: 100vh;
+}
+
+.discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    width: 50%;
+
+    p {
+        margin: 2rem 0;
+    }
+
+    .btn {
+        margin: 0 1rem;
+    }
+}

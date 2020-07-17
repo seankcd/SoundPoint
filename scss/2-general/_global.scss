@@ -18,10 +18,20 @@ a {
 h1 {
     text-transform: uppercase;
     font-size: 3rem;
+    line-height: 1;
 }
 
+.blue-dark { color: $blue-dark; }
+
+.blue-light { color: $blue-light; }
+
+.pink-dark { color: $pink-dark; }
+
+.pink-light { color: $pink-light; }
+
 .container {
-    max-width: var(--max-width);
+    max-width: $max-width;
     margin: 0 auto;
+    padding: 0 2rem;
     overflow: hidden; /* Visible makes the butons work. Used to be/is supposed to be hidden */
 }

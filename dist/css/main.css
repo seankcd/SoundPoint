@@ -25,7 +25,7 @@ body {
 
 a {
   color: #f5f5f5;
-  transition: all 150ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 a:hover {
@@ -35,11 +35,29 @@ a:hover {
 h1 {
   text-transform: uppercase;
   font-size: 3rem;
+  line-height: 1;
+}
+
+.blue-dark {
+  color: #1362AB;
+}
+
+.blue-light {
+  color: #41A2FC;
+}
+
+.pink-dark {
+  color: #AA5AAC;
+}
+
+.pink-light {
+  color: #FC81FF;
 }
 
 .container {
-  max-width: var(--max-width);
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
   overflow: hidden;
   /* Visible makes the butons work. Used to be/is supposed to be hidden */
 }
@@ -55,14 +73,14 @@ h1 {
   cursor: pointer;
   outline: none;
   border-radius: 8px;
-  transition: all 150ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 .btn:hover {
   background: #0f89fb;
   color: gainsboro;
   box-shadow: 0 3px 20px rgba(65, 162, 252, 0.4);
-  transition: all 150ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 .btn-outline {
@@ -76,10 +94,20 @@ h1 {
 
 .btn-outline-pink {
   border: 3px solid #FC81FF;
+  padding: 0.4rem 1.2rem;
 }
 
 .btn-outline-pink:hover {
   box-shadow: 0 3px 20px rgba(252, 129, 255, 0.4);
+}
+
+.btn-outline-blue {
+  border: 3px solid #41A2FC;
+  padding: 0.4rem 1.2rem;
+}
+
+.btn-outline-blue:hover {
+  box-shadow: 0 3px 20px rgba(65, 162, 252, 0.4);
 }
 
 .btn-outline-pink-blue {
@@ -113,7 +141,7 @@ nav {
   align-items: center;
   min-height: 12vh;
   line-height: 1.6;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -222,12 +250,12 @@ nav .burger .line-2 {
   from {
     opacity: 0;
     transform: translateX(50px);
-    transition: all 150ms ease-in;
+    transition: all 200ms ease-in;
   }
   to {
     opacity: 1;
     transform: translateX(0px);
-    transition: all 150ms ease-in;
+    transition: all 200ms ease-in;
   }
 }
 
@@ -255,9 +283,7 @@ footer .container {
   width: 100%;
   position: absolute;
   bottom: 20px;
-  margin: 0 auto;
   padding: 0 2rem;
-  max-width: 1300px;
 }
 
 footer .container p {
@@ -284,44 +310,29 @@ footer .container .social-footer a:first-child {
   }
 }
 
-main {
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 2rem;
   height: 90vh;
-  max-width: 1300px;
 }
 
-main img {
-  height: 95%;
+.home img {
+  height: 96%;
   padding-right: 2rem;
 }
 
-main .hero-text {
+.home .hero-text {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-main .hero-text h1 {
-  line-height: 1;
-}
-
-main .hero-text p {
+.home .hero-text p {
   margin: 2rem 0;
 }
 
-main .hero-text .blue {
-  color: #1362AB;
-}
-
-main .hero-text .pink {
-  color: #AA5AAC;
-}
-
-main .hero-text .btn {
+.home .hero-text .btn {
   margin-right: 1rem;
 }
 
@@ -329,22 +340,44 @@ main .hero-text .btn {
   body {
     background: linear-gradient(rgba(74, 63, 75, 0.8), rgba(74, 63, 75, 0.8)), url("../img/girl.png") no-repeat fixed left bottom/650px, #4a3f4b;
   }
-  main {
+  .home {
     height: 70vh;
   }
-  main img {
+  .home img {
     display: none;
   }
-  main .hero-text {
+  .home .hero-text {
     display: flex;
     align-items: center;
     text-align: center;
   }
-  main .hero-text h1 {
+  .home .hero-text h1 {
     font-size: 2.6rem;
   }
-  main .hero-text p {
+  .home .hero-text p {
     font-size: 0.95rem;
   }
+}
+
+#page-discover {
+  background: linear-gradient(rgba(74, 63, 75, 0.7), rgba(74, 63, 75, 0.7)), url("../img/album-bg.png") no-repeat center center/cover, #4a3f4b;
+  height: 100vh;
+}
+
+.discover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  width: 50%;
+}
+
+.discover p {
+  margin: 2rem 0;
+}
+
+.discover .btn {
+  margin: 0 1rem;
 }
 /*# sourceMappingURL=main.css.map */

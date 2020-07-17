@@ -28,12 +28,23 @@
 
         &-pink {
             border: 3px solid $pink-light;
+            padding: 0.4rem 1.2rem;
 
             &:hover {
                 box-shadow: $shadow-pink-light;
             }
         }
 
+        &-blue {
+            border: 3px solid $blue-light;
+            padding: 0.4rem 1.2rem;
+
+            &:hover {
+                box-shadow: $shadow-blue-light;
+            }
+        }
+
+        // Outline Gradient. Doesn't work as intended. Middle of button can't be transparent
         &-pink-blue {
             // border: 3px solid;
             position: relative;
