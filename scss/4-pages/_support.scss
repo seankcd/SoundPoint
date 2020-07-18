@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     height: 80vh;
 
     &-search {
@@ -21,7 +22,7 @@
             height: 50px;
             border: none;
             width: 30rem;
-            padding-left: 2rem;
+            padding-left: 1.5rem;
             border-bottom-left-radius: 8px;
             font-size: 1.2em;
             color: $gray-light;
@@ -39,10 +40,45 @@
 
             &-list {
                 margin: 0 2rem;
+                text-align: left;
             }
 
             a {
                 font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $resp-phone) {
+    .support {
+        height: 100%;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        &-search h1 {
+            display: none;
+        }
+
+        &-search {
+            input[type=text] {
+                width: 80%;
+            }
+        }
+
+        .problems {
+            &-links {
+                flex-direction: column;
+
+                &-list {
+                    text-align: center;
+
+                    ul {
+                        margin-bottom: 0.5rem;
+                    }
+                }
             }
         }
     }

@@ -78,7 +78,16 @@
         border-top-right-radius: 8px;
         background: $blue-light;
         font-weight: 600;
+        font-size: 1.1em;
         color: $white-dark;
         cursor: pointer;
+        transition: $trans-1;
+
+        &:hover {
+            background: darken($blue-light, 10%);
+            color: darken($white-dark, 10%);
+            box-shadow: $shadow-blue-light;
+            transition: $trans-1;
+        }
     }
 }
